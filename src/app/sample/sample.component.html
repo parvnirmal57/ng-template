@@ -1,0 +1,10 @@
+<p>sample works!</p>
+<ng-template>
+<p>hi am i visible ?</p>
+</ng-template>
+<div *ngIf="isLoggedIn; else loginTemplate">
+    <h1>Welcome back</h1>
+</div>
+<ng-template #loginTemplate>
+    <h1>Pls login to continue</h1>
+</ng-template>
